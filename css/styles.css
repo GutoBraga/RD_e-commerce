@@ -1,18 +1,20 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
-}
+}*/
 
-body {
+/* body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #696969;
-}
+    margin: 0;
+    padding: 0;
+}  */
 
-.container {
+.home{
     max-width: 1460px;
     background-color: white;
     padding: 0;
-}
+} 
 
 /*ACIMA DO MENU*/
 .logo {
@@ -179,4 +181,37 @@ ul {
 
 .copyr strong {
     color: #016f33;
+}
+
+/* estilo tela de pagamento */
+.cont-pagamento {
+    top: 2vh;
+    left: 2vw;
+    background-color: white;
+    height: 100px;
+}
+
+.logo-pagamento {
+    height: 147px;
+    background-color: rgb(226,223,223);
+}
+.logo-rd{
+    left: 9vw;
+    margin-left: 10vw;
+    margin-top: 20px;
+    height: 100px;
+    width: 100px;
+    background-image: url(../images/logo\ raia\ redimensionado.png);
+    background-position: center;
+    background-size: 100px;
+}
+
+.principal-pagamento{
+    height: 600px;
+}
+
+.footer-pagamento {
+    bottom: 4vh;
+    height: 147px;
+    background-color: rgb(226,223,223);
 }
