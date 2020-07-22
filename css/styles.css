@@ -205,13 +205,100 @@ ul {
     background-position: center;
     background-size: 100px;
 }
+.fone{
+    margin-left:16vw;
+    margin-top: 8vh;
+    height: 50px;
+    width: 50px;
+    background-image: url(../images/fone-verde.png);
+    background-size: 50px;
 
-.principal-pagamento{
-    height: 600px;
+}
+.central-atendimento{
+    text-decoration: none;
+    margin-top: 10vh;
+}
+.central-atendimento:hover{
+    text-decoration: none;
+    background: none;
 }
 
 .footer-pagamento {
+    top: 10vh;
     bottom: 4vh;
     height: 147px;
     background-color: rgb(226,223,223);
+}
+
+ 
+
+.menu-pag{
+    margin-top: 30px;
+}
+
+ .itens-menu{
+    margin-left: 10vw;
+ }
+ .cont{
+     margin-top: 40px;
+     width: 500px;
+     border-width: 1px;
+     border-style: solid;
+     border-color:rgb(226,223,223);;
+     background-color: transparent;
+ }
+ .credito{
+    height: 600px;
+    margin-right: 6vw;
+ }
+ .boleto{
+    
+ }
+ .resumo-pedido{
+    
+ }
+
+.opcao{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.bandeira{
+    margin-top:20px;
+    width: 60px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.itau{ 
+    background-image: url(../images/341.png);
+}
+.brad{
+    background-image: url(../images/237.png);
+}
+.barra-boleto{
+    background-image: url(../images/boleto.jpg);
+}
+
+.input-radio-1{
+     margin-top: 10px;
+}
+
+.label-pagamento{
+     margin-top: 7px; 
+}
+.dim{
+    font-size: 10px;
+    margin-left: 20vw;
+    margin-top: 40px;
+}
+.numero-center{
+    margin-left: 10vw;
+    font-size: 40px;
+}
+.termos-uso{
+    font-size: 20px;
+    margin-top: 50px;
+    margin-left: 13vw;
 }
