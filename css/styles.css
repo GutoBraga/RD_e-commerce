@@ -14,7 +14,25 @@ body {
     padding: 0;
 } 
 
+ul {
+    list-style: none;
+}
+
 /*ACIMA DO MENU*/
+.superior-topo {
+    display: flex;
+    justify-content: space-around;
+}
+
+.superior-topo .text-input {
+    width: 420px;
+}
+
+.superior-topo p {
+    font-style: italic;
+    text-align: justify;
+}
+
 .logo {
     width: 75px;
     height: 75px;
@@ -39,50 +57,67 @@ body {
     height: 24px;
 }
 
+.aproximar {
+    
+}
+
 .icone-topo {
     width: 24px;
     height: 24px;
 }
 
+.left-cart {
+    width: 40px;
+    height: 53px;
+    background-image: url('../images/left.png');
+}
+
+.center-cart {
+    background-color: #016f33;
+    height: 43px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-cart {
+    width: 15px;
+    height: 43px;
+    background-image: url('../images/right.png');
+}
+
+.cart {
+    display: flex;
+}
+
+.quantity {
+    color: #FFFFFF;
+    font-style: italic;
+}
+
+.value {
+    color: #f1a658;
+    font-style: italic;
+}
+
 /*MENU CATEGORIA*/
-a:link, a:visited {
-    color: #016f33;
-    padding: 2px;
-}
-
-a:hover {
-    color: #133a01df;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-#topo ul {
+.categoria-header {
     background: #016f33;
+    display: flex;
+    align-items: center;
+}
+
+.categoria-header ul li {
     float: left;
 }
 
-#topo ul li {
-    float: left;
-}
-
-#topo ul a {
-    font-size: 0.9em;
-    padding: 0.5em 1.5em;
+.categoria-header ul a {
+    padding: 5px 20px;
     display: block;
-    line-height: 2.1em;
     text-decoration: none;
     color: #ffffff;
 }
-
-#topo ul .primeiro a {
-    background: none;
-}
-
-#topo ul a:hover {}
 
 /*FOOTER*/
 .footer-separacao {
