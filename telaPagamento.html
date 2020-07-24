@@ -18,11 +18,20 @@
             <div class="fone"></div>
             <a class="central-atendimento col-sm" href="#">Central de Atendimento</a>
         </div>
-        
+
+        <!-- <div class="row imagens-menu">
+            <div class="identific"></div>
+            <div class="entreg"></div>
+            <div class="pag"></div>
+        </div> -->
+
         <div class="row col menu-pag">
-            <a href="#" class="col-2 itens-menu" >identificação</a>
-            <a href="#" class="col-2 itens-menu">Pagamento</a>
-            <a href="#" class="col-2 itens-menu">Entrega</a>                      
+            <div class="identific imagens-menu"></div>
+            <a href="#" class="col-2 itens-menu " >Identificação</a>
+            <div class="entreg imagens-menu"></div>
+            <a href="#" class="col-2 itens-menu ">Entrega</a>
+            <div class="pag imagens-menu"></div>
+            <a href="#" class="col-2 itens-menu ">Pagamento</a>                      
         </div>
 
         <div class="row col info-pag">
@@ -75,25 +84,181 @@
                                 <input type="radio" id="opcao-pagamento" class="input-radio-1 col-3"  >
                                 <label for="opcao-pagamento" id="opcao-pagamento" class="label-pagamento">Crédito</label>
                             </div>
+
+                            <div class="row col dados-card-cred">
+                                <label for="num-card-cred" class="label-cred">Numero do Cartão*</label>
+                            </div>
+                            <div class="row col dados-card-cred">
+                                <input type="text" id ="num-card-cred" class="num-cred">
+                            </div>
+                            
+                            <div class="row bandeiras">
+                                <div class="bandeira amex"></div>
+                                <div class="bandeira visa"></div>
+                                <div class="bandeira master"></div>
+                                <div class="bandeira elo"></div>
+                                <div class="bandeira hiper"></div>
+                                <div class="bandeira jbc"></div>
+                                <div class="bandeira circ"></div>
+                            </div>
+                            
+                            <div class="row col dados-card-cred">
+                                <label for="nome-card-cred" class="label-cred">Nome do Titular*</label>
+                            </div>
+                            <div class="row col dados-card-cred">
+                                <input type="text" id ="nome-card-cred" class="num-cred">
+                            </div>
+
+                            <div class="row col dados-card-cred">
+                                <label for="date-card-cred" class="label-cred">Data de Vencimento*</label>
+                            </div>
+                               
+                            <div class="row col dados-card-cred">
+                                <input type="date" id ="date-card-cred" class="data-cred">
+                            </div>
+
+                            <div class="row col dados-card-cred">
+                                <label for="cv-card-cred" class="label-cred">Código de validação*</label>
+                            </div>
+                               
+                            <div class="row col dados-card-cred">
+                                <input type="number" id ="cv-card-cred" class="validacao num-cred">
+                            </div>
+
+
+
+                            <div class="row col dados-card-cred">
+                                <label for="np-card-cred" class="label-cred">Numero de Parcelas*</label>
+                            </div>
+                               
+                            <div class="row col dados-card-cred">
+                                <input type="number" id ="np-card-cred" class="Parcelas num-cred">
+                            </div>
+
+                            <div class="row col dados-card-cred">
+                                <input type="radio" id="opcao-debito " class="input-radio-4" >
+                                <label for="salvar dados-card-cred" class="label-salva">Salvar dados do cartão de crédito</label>
+                            </div>
+                                
+
+
+
                         </div>
                     </div>
                 </div>
             </form>
-            <div class="cont resumo-pedido">
-                            
+            
+            <div class="resumo-pedido">
+
+                <div class="row">
+                    <h2 class="pedido-cupom">Cupom de desconto</h2>
+                </div>
+                <div class="row">
+                    <input type="text" class="num-cp"> 
+                </div>
+                <div class="row">
+                    <h1 class="pedido-text">Resumo do pedido</h1>
+                </div>
+                <div class="row">
+                    <div class="cont resume-ped">
+                        <div class="row col">
+                            <ul class="ul-item">
+                                <li class="li-item">Produto</li>
+                                <li class="li-item">Qtd</li>
+                                <li class="li-item">Valor</li>
+                            </ul>
+                        </div>
+                        <div class="row col">
+                            <ul class="ul-item1">
+                                <li class="li item1">
+                                    <!-- <input type="text" class="nome-produto" placeholder="AAS
+                                    PROTECT
+                                    100MG
+                                    Sanofi
+                                    30 Comprimidos
+                                    21g Peso do
+                                    produto" > -->
+                                    <textarea name="nome-produto" class="txted nome-produto" id="#" >AAS PROTECT 100MG Sanofi 30 Comprimidos 21g Peso do produto</textarea>
+
+                                </li>
+                                <li class="li Qtd">
+                                    <!-- <input type="span" class="qtd-produto"> -->
+                                    <textarea name="qtd-produto" class="txted qtd-produto" id="#" >1</textarea>
+                                </li>
+                                <li class="li Valor">
+                                    <textarea name="valor-produto" class="txted valor-produto" id="#">R$12,99</textarea>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row col">
+                            <ul class="ul-item">
+                                <li class="li ">
+                                    Subtotal:
+                                </li>
+                                <li class="li Valor">
+                                    <!-- <input type="span" class="valor-produto-sub"> -->
+                                    <textarea name="valor-produto" class="valor-produto-sub id="#">R$12,99</textarea>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row col">
+                            <ul class="ul-item">
+                                <li class="li ">
+                                    Frete(Compre e Retire)
+                                </li>
+                                <li class="li ">
+                                    Gratis
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row col">
+                            <ul class="ul-item">
+                                <li class="li ">
+                                    Total
+                                </li>
+                                <li class="li ">
+                                    <!-- <input type="span" class="valor-produto-sub"> -->
+                                    <textarea name="valor-produto" class="valor-produto-total id="#">R$12,99</textarea>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="row">
+                    <button type="button" class="btn btnf btn-primary">FINALIZAR COMPRA</button>
+                </div>
+
             </div>
         </div>
 
-        
-        <div class="row col footer-pagamento">
-                <div class="row">
-                    <a href="#" class="atendimento-cliente  dim">Rd Atendimento ao cliente</a>
-                    <a href="#" class="rac dim">rac@rd.com.br</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="row col footer-pagamento estilo-fot">
+                <div class="row estilo-fot">
+                    <a href="#" class="espaco atendimento-cliente estilo-fot dim">Rd Atendimento ao cliente</a>
+                    <a href="#" class="espaco estilo-fot dim">Dúvidas, elogios e reclamações: </a>
+                    <a href="#" class="rac estilo-fot dim">| rac@rd.com.br |</a>
+                    <a href="#" class="estilo-fot dim">De Segunda a Sábado das 08h às 21h, inclusive feriados.</a>
+
                 </div>
 
-                <div class="row">
-                    <a href="#" class="numero-center">3003-7241</   a>
-                    <a href="#" class="termos-uso">termos de uso</  a>
+                <div class="row estilo-fot">
+                    <a href="#" class="numero-center estilo-fot">3003-7241</a>
+                    <div class="traco-foot"></div>
+                    <a href="#" class="termos-uso estilo-fot">Termos de uso.</a>
                 </div>
 
         </div>
