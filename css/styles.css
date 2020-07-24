@@ -4,9 +4,18 @@
     background-color: #696969;
 }*/
 
+<<<<<<< HEAD
 body {
     font-family: Arial, Helvetica, sans-serif;
 }  
+=======
+/*body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #696969;
+    margin: 0;
+    padding: 0;
+} */
+>>>>>>> 0668f47352bb03d083bb479d64107c8a7b50f996
 
 .home{
     max-width: 1460px;
@@ -22,13 +31,16 @@ ul {
 .superior-topo {
     display: flex;
     justify-content: space-around;
+    flex-direction: row;
 }
 
 .superior-topo .text-input {
     width: 420px;
 }
 
-.superior-topo p {
+.superior-topo a {
+    text-decoration: none;
+    color: #016f33;
     font-style: italic;
     text-align: justify;
 }
@@ -57,13 +69,19 @@ ul {
     height: 24px;
 }
 
-.aproximar {
-    
+.login {
+    display: flex;
+    align-items: center;
+}
+.pedidos {
+    display: flex;
+    align-items: center;
 }
 
-.icone-topo {
-    width: 24px;
-    height: 24px;
+.img-red img {
+    width: 30px;
+    height: 30px;
+    margin: 15px;
 }
 
 .left-cart {
@@ -105,17 +123,10 @@ ul {
 .categoria-header {
     background: #016f33;
     display: flex;
-    align-items: center;
+    justify-content: space-around;
 }
 
-.categoria-header ul li {
-    float: left;
-}
-
-.categoria-header ul a {
-    padding: 5px 20px;
-    display: block;
-    text-decoration: none;
+.link-categoria {
     color: #ffffff;
 }
 
@@ -342,12 +353,15 @@ ul {
     
     margin-right: 6vw;
  }
+<<<<<<< HEAD
  .boleto{
     
  }
  .resume-ped{
     height: 600px;
  }
+=======
+>>>>>>> 0668f47352bb03d083bb479d64107c8a7b50f996
 
 .opcao{
     margin-left: 10px;
