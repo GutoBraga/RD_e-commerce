@@ -530,19 +530,19 @@ ul {
     margin-top: 30px;
     font-size: 20px;
 }
-/*
-.li {
+
+.li-pag {
     display: inline;
     margin-left: 40px;
     margin-right: 40px;
 }
 
-.li-item{
+.li-item-pag{
     display: inline;
     margin-left: 40px;
     margin-right: 40px;
     text-decoration: double;
-}*/
+}
 
 .btnf{
     background-color: #016f33;
