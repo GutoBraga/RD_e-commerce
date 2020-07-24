@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RD E-commerce</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <style>
+        h2 {
+
+            font-size: 26px;
+            padding: 50px;
+            ;
+            color: #016f33;
+            font-weight: bold;
+
+
+
+
+        }
+
+        .historico-fundo {
+
+            border-style: groove;
+            margin-left: 100px;
+            height: auto;
+            padding: 0px;
+
+
+        }
+
+
+        .item {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .historico ul,
+        .historico2 ul,
+        .historico3 ul {
+
+
+            display: flex;
+            background-color: #016f33;
+            height: 35px;
+            justify-content: space-around;
+            color: white;
+            padding: 0px;
+            font-size: 19px;
+
+        }
+
+
+
+        .items ul,
+        .items2 ul,
+        .items3 ul {
+
+            display: flex;
+            color: black;
+            justify-content: space-between;
+            padding: 0px;
+            font-size: 18px;
+            font-weight: bold;
+            margin-right: 200px;
+
+
+        }
+
+
+        #imagem,
+        #imagem2,
+        #imagem3 {
+
+
+            margin-left: 30px;
+
+        }
+
+
+
+
+
+
+        .btn-success {
+
+            font-size: 17px;
+            background-color: #016f33;
+        }
+
+        .botao {
+
+            text-align: right;
+            margin-right: 20px;
+            position: relative;
+            bottom: 200px;
+        }
+
+        #botao2 {
+
+            text-align: right;
+            margin-right: 20px;
+            position: relative;
+            bottom: 100px;
+        }
+
+        #botao3 {
+
+            text-align: right;
+            margin-right: 20px;
+            position: relative;
+            bottom: 60px;
+        }
+    </style>
+    <h2>Histórico de compras </h2>
+
+    <div class="row" >
+        <div class="historico-fundo col-lg-9" style="display: block; ">
+            <div class="row historico">
+                <div class="col-lg-12">
+                    <ul>
+                        <div class="col-3 item">
+                            <p> Data: 14/07/2020 </p>
+                        </div>
+                        <div class="col-3 item">
+                            <p> Produto </p>
+                        </div>
+                        <div class="col-3 item">
+                            <p> Quantidade </p>
+                        </div>
+                        <div class="col-3 item">
+                            <p> Valor Unitário </p>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-3 item">
+                    <img src="images/caixa-remedio.jpg">
+                </div>
+                <div class="col-3 item">
+                    <p>Medicamento</p>
+                </div>
+                <div class="col-3 item">
+                    <p>500mg</p>
+                </div>
+                <div class="col-3 item">
+                    <p>R$5,99</p>
+                </div>
+                <div class="col-3 item">
+                    <img src="images/caixa-remedio.jpg">
+                </div>
+                <div class="col-3 item">
+                    <p>Medicamento</p>
+                </div>
+                <div class="col-3 item">
+                    <p>500mg</p>
+                </div>
+                <div class="col-3 item">
+                    <p>R$5,99</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-3 item">
+                    <img src="images/caixa-remedio.jpg">
+                </div>
+                <div class="col-3 item">
+                    <p>Medicamento</p>
+                </div>
+                <div class="col-3 item">
+                    <p>500mg</p>
+                </div>
+                <div class="col-3 item">
+                    <p>R$5,99</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-3 botao">
+                <button type="button" class="btn btn-success">Comprar novamente</button>
+        </div>
+    </div>
+    </div>
+
+    </div>
+
+
+
+
+
+    <div class="historico-fundo col-lg-9">
+
+
+
+
+        <div class="row historico2">
+            <div class="col-lg-12">
+
+                <ul>
+                    <li>Data: 14/07/2020</li>
+                    <li>Produto</li>
+                    <li>Quantidade</li>
+                    <li>Valor Unitário</li>
+                </ul>
+
+            </div>
+        </div>
+
+
+        <div class="row items2">
+            <div class="col-lg-12">
+
+                <ul>
+
+                    <div class="col-2" id="imagem">
+                        <img src="images/caixa-remedio.jpg">
+                    </div>
+
+                    <li>Medicamento genérico 500mg</li>
+                    <li> 1un</li>
+                    <li> R$ 5,99</li>
+
+                </ul>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <div id="botao2">
+        <button type="button" class="btn btn-success">Comprar novamente</button>
+    </div>
+
+
+
+
+
+    <div id="historico-fundo3" class="col-lg-9">
+
+
+
+
+        <div class="row historico3">
+            <div class="col-lg-12">
+
+                <ul>
+                    <li>Data: 14/07/2020</li>
+                    <li>Produto</li>
+                    <li>Quantidade</li>
+                    <li>Valor Unitário</li>
+                </ul>
+
+            </div>
+        </div>
+
+
+        <div class="row items3">
+            <div class="col-lg-12">
+
+                <ul>
+
+                    <div class="col-2" id="imagem">
+                        <img src="images/caixa-remedio.jpg">
+                    </div>
+
+                    <li>Medicamento genérico 500mg</li>
+                    <li> 1un</li>
+                    <li> R$ 5,99</li>
+
+                </ul>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <div id="botao3">
+        <button type="button" class="btn btn-success">Comprar novamente</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
