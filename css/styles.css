@@ -6,13 +6,13 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-}  
+}
 
 .home{
     max-width: 1460px;
     background-color: white;
     padding: 0;
-} 
+}
 
 ul {
     list-style: none;
@@ -179,12 +179,12 @@ ul {
 
 .links-footer {
     margin: 40px 40px 60px 40px;
-    text-align: left; 
+    text-align: left;
 }
 .links-footer-pos {
     display: flex;
     justify-content: center;
-    
+
 }
 
 .links-footer h5 {
@@ -295,28 +295,32 @@ ul {
     background-color: rgb(226,223,223);
 }
 .logo-rd{
-    left: 9vw;
-    margin-left: 10vw;
+
     margin-top: 20px;
     height: 100px;
     width: 100px;
     background-image: url(../images/logo\ raia\ redimensionado.png);
+    background-repeat: no-repeat;
     background-position: center;
     background-size: 100px;
 }
-.fone{
-    margin-left:16vw;
-    margin-top: 50px;
-    height: 50px;
-    width: 50px;
-    background-image: url(../images/fone-verde.png);
-    background-size: 50px;
 
-}
+
 .central-atendimento{
     color: #016f33;
     margin-top: 60px;
 }
+.central-atendimento::before{
+    content: " ";
+    margin-left:-50px;
+    margin-top: -15px;
+    height: 50px;
+    width: 50px;
+    background-image: url(../images/fone-verde.png);
+    position: absolute;
+
+}
+
 .central-atendimento:hover{
     text-decoration: none;
     color: #023a1b;
@@ -326,20 +330,19 @@ ul {
 .footer-pagamento {
     top: 10vh;
     bottom: 4vh;
-    height: 147px;
+    margin-bottom: 20px;
     background-color: rgb(226,223,223);
     color: #016f33;
 }
 .estilo-fot {
     color: #016f33;
-
 }
 .estilo-fot:hover{
     font-style: none;
     text-decoration: none;
     color: #023a1b;
 }
- 
+
 
 .menu-pag{
     margin-top: 60px;
@@ -349,40 +352,63 @@ ul {
  .itens-menu{
     font-style:none ;
     font-size: 20px;
-    color: #016f33;
-
+    color: black;
  }
 
- 
+
  .itens-menu:hover{
-     color: #023a1b;
+     color: rgba(1, 1,1,0.5);
      text-decoration: none;
  }
 
- .imagens-menu{
-    /* display: inline; */
-    z-index: -5;
-    margin-left: 4vw;
-    margin-top: -6px;
+
+.identific::before{
+    content: " ";
     height: 50px;
     width: 50px;
+    margin-left: -50px;
+    margin-top: -10px;
     background-size: 50px;
+    position: absolute;
     background-position: center;
     background-repeat: no-repeat;
-}
-.identific{
     background-image: url(../images/login\(1\).png);
 }
-
-.entreg{
+.identific{
+    color:rgba(1, 1,1,0.5);
+}
+.entreg::before{
+    content: " ";
+    height: 50px;
+    width: 50px;
+    margin-left: -50px;
+    margin-top: -10px;
+    background-size: 50px;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
     background-image: url(../images/truck.png);
 }
-.pag{
+.entreg{
+    color:rgba(1, 1,1,0.5);
+}
+.pag::before{
+    content: " ";
+    height: 50px;
+    width: 50px;
+    margin-left: -50px;
+    margin-top: -10px;
+    background-size: 50px;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
     background-image: url(../images/credit-card.png);
 }
 
+
+
  .cont{
-     margin-top: 40px; 
+     margin-top: 40px;
      width: 500px;
      border-width: 1px;
      border-style: solid;
@@ -390,11 +416,10 @@ ul {
      background-color: transparent;
  }
  .credito{
-    
     margin-right: 6vw;
  }
  .boleto{
-    
+
  }
  .resume-ped{
     height: 600px;
@@ -413,7 +438,7 @@ ul {
     background-position: center;
 }
 
-.itau{ 
+.itau{
     background-image: url(../images/341.png);
 }
 .brad{
@@ -452,34 +477,32 @@ ul {
 }
 
 .label-pagamento{
-     margin-top: 7px; 
+     margin-top: 7px;
 }
 .dim{
     font-size: 12px;
     margin-top: 50px;
+    
 }
 .rac{
     font-weight: bold;
 }
-.espaco{
-    margin-left: 12vw;
-}
+
 .numero-center{
-    margin-left: 10vw;
     font-size: 40px;
 }
 .traco-foot{
     height: 100px;
     width: 1px;
     background-color: darkgray;
-    margin-top: -50px;
-    margin-left: 5vw;
+    margin-top: 20px;
 }
 .termos-uso{
     color: grey;
     font-size: 15px;
     margin-top: 40px;
-    margin-left: 20vw;
+    margin-bottom: 15px;
+    
 }
 .pedido-text{
     margin-top: 100px;
@@ -509,7 +532,7 @@ ul {
     margin-left: 40px;
 }
 .label-salva{
-    
+
     font-size: 15px;
     margin-left: 10px;
 }
