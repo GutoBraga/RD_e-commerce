@@ -282,10 +282,9 @@ ul {
 
 
 
-/* estilo tela de pagamento */
+/* -------------------------------------------------estilo tela de pagamento--------------------------------------------- */
 .cont-pagamento {
-    top: 2vh;
-    left: 2vw;
+
     background-color: white;
     height: 100px;
 }
@@ -330,7 +329,7 @@ ul {
 .footer-pagamento {
     top: 10vh;
     bottom: 4vh;
-    margin-bottom: 20px;
+    margin-top: 60px;
     background-color: rgb(226,223,223);
     color: #016f33;
 }
@@ -343,11 +342,10 @@ ul {
     color: #023a1b;
 }
 
-
 .menu-pag{
     margin-top: 60px;
+    margin-bottom: 60px;
 }
-
 
  .itens-menu{
     font-style:none ;
@@ -355,18 +353,15 @@ ul {
     color: black;
  }
 
-
  .itens-menu:hover{
      color: rgba(1, 1,1,0.5);
      text-decoration: none;
  }
-
-
 .identific::before{
     content: " ";
     height: 50px;
     width: 50px;
-    margin-left: -50px;
+    margin-left: -60px;
     margin-top: -10px;
     background-size: 50px;
     position: absolute;
@@ -381,7 +376,7 @@ ul {
     content: " ";
     height: 50px;
     width: 50px;
-    margin-left: -50px;
+    margin-left: -60px;
     margin-top: -10px;
     background-size: 50px;
     position: absolute;
@@ -396,7 +391,7 @@ ul {
     content: " ";
     height: 50px;
     width: 50px;
-    margin-left: -50px;
+    margin-left: -60px;
     margin-top: -10px;
     background-size: 50px;
     position: absolute;
@@ -405,11 +400,9 @@ ul {
     background-image: url(../images/credit-card.png);
 }
 
-
-
  .cont{
      margin-top: 40px;
-     width: 500px;
+     width: 600px;
      border-width: 1px;
      border-style: solid;
      border-color:rgb(226,223,223);
@@ -418,9 +411,7 @@ ul {
  .credito{
     margin-right: 6vw;
  }
- .boleto{
-
- }
+ 
  .resume-ped{
     height: 600px;
  }
@@ -436,6 +427,7 @@ ul {
     height: 40px;
     background-repeat: no-repeat;
     background-position: center;
+    
 }
 
 .itau{
@@ -447,29 +439,73 @@ ul {
 .barra-boleto{
     background-image: url(../images/boleto.jpg);
 }
-.amex{
+.amex label{
     background-image: url(../images/AE.png);
 }
-.visa{
+.visa label{
     background-image: url(../images/VI.png);
 }
-.master{
+.master label{
     background-image: url(../images/MC.png);
 }
-.elo{
+.elo label{
     background-image: url(../images/EL.png);
 }
-
-.hiper{
+.hiper label{
     background-image: url(../images/HI.png);
 }
-.jbc{
+.jbc label{
     background-image: url(../images/JC.png);
 }
-.circ{
+.circ label{
     background-image: url(../images/DI.png);
 }
+.opcao-pagamento-cred-ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+.opcao-pagamento-cred-ul::after{
+    content: "";
+    clear: both;
+}
+.opcao-pagamento-cred{
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    float: left;
+    height: 40px;
+    position: relative;
+    width: 55px;
+    margin-left: 10px;
+    border-style: none;
+}
+.opcao-pagamento-cred label{
+    background-color:white;
+    background-size: 60px;
+    background-repeat:no-repeat;
+    background-position:center center;
+    height: 40px;
+    width: 55px;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    position: absolute;
+    text-indent: 100%;
+    top: 1px;
+    bottom: 1px;
+    left: 1px;
+    right: 1px;
+}
+.opcao-pagamento-cred input:focus + label {
+    border: 4px solid #21b4d0;
+}
 
+
+
+.radio-cred{
+    visibility: hidden;
+}
 
 
 .input-radio-1{
@@ -511,20 +547,25 @@ ul {
 }
 .label-cred{
     margin-top: 20px;
-    margin-left: 30px;
+    margin-left: 30px;   
 }
+
  .num-cred{
     margin-left: 20px;
     width: 600px;
     border-radius: 20px;
  }
+.num-cred:focus{
+    border-radius: 20px;
+}
+
  .bandeiras{
      margin-left: 20px;
  }
 
 .data-cred{
     margin-left: 20px;
-    width: 600px;
+    width: 200px;
     border-radius: 20px;
 }
 .input-radio-4{
@@ -554,7 +595,7 @@ ul {
     font-size: 20px;
 }
 
-.li-pag {
+.li-pag{
     display: inline;
     margin-left: 40px;
     margin-right: 40px;
@@ -622,4 +663,130 @@ ul {
     width: 85px;
     border-style: none;
     height: 40px;
+}
+
+
+/* --------------------------------TELA DE CESTA------------------------------------------- */
+.cesta-tela{
+    color: #016f33;
+}
+.cesta-img{
+    font-size: 20px;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.cesta-img::after{
+    content: " ";
+    height: 50px;
+    width: 50px;
+    margin-left: -55px;
+    margin-top: -14px;
+    background-size: 40px;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/basket\ -verde.png);
+}
+
+.descricao-cesta{
+    background-color: #E2DFDF;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    width: 800px;
+}   
+.valor-cesta{
+}
+.cont-cesta{
+    margin-top: 40px;
+    border-width: 1px;
+    border-style: solid;
+    border-color:rgb(226,223,223);
+    background-color: transparent;
+    width: 900px;
+}
+.produto-card-cesta-imagem{
+    margin-top: 40px;
+    border-width: 1px;
+    border-style: solid;
+    border-color:rgb(226,223,223);
+    width: 150px;
+    height: 200px;
+    margin-left: 60px;
+    background-image: url(../images/caixa-remedio.jpg);
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+}
+.produto-card-cesta-descricao{
+    margin-top: 40px;
+    border-width: 1px;
+    border-style: solid;
+    border-color:rgb(226,223,223);
+    width: 120px;
+    height: 200px;
+    margin-left: 60px;
+    padding: 0px;
+
+}
+.produto-card-cesta-quantida{
+    margin-top: 40px;
+    border-width: 1px;
+    border-style: solid;
+    border-color:rgb(226,223,223);
+    width: 60px;
+    height: 200px;
+    margin-left: 60px;
+}
+.produto-card-cesta-valor-unitario{
+    margin-top: 40px;
+    border-width: 1px;
+    border-style: solid;
+    border-color:rgb(226,223,223);
+    width: 100px;
+    height: 200px;
+    margin-left: 60px;
+}
+.produto-card-cesta-apagar{
+    margin-top: 40px;
+    border-width: 1px;
+    border-style: solid;
+    border-color:rgb(226,223,223);
+    width: 100px;
+    height: 200px;
+    margin-left: 60px;
+}
+
+.descricao-produto-cesta{
+    list-style: none;
+    padding: 0px;
+}
+.descricao-marca-cesta{
+    font-size: 17px;
+    color: black;
+    font-weight: bold;
+}
+.descricao-fabricante-cesta{
+    color: #f1a658;
+    font-weight: bold;
+}
+.descricao-qtd-cesta{
+    
+
+}
+.descricao-peso-cesta{
+
+}
+
+.qt-cesta{
+    margin-top: 80px;
+}
+.card-price-cesta{
+    font-size: 22px;
+    text-align: center center;
+
 }
