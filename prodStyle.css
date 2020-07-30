@@ -282,9 +282,10 @@ ul {
 
 
 
-/* -------------------------------------------------estilo tela de pagamento--------------------------------------------- */
+/* estilo tela de pagamento */
 .cont-pagamento {
-
+    top: 2vh;
+    left: 2vw;
     background-color: white;
     height: 100px;
 }
@@ -329,7 +330,7 @@ ul {
 .footer-pagamento {
     top: 10vh;
     bottom: 4vh;
-    margin-top: 60px;
+    margin-bottom: 20px;
     background-color: rgb(226,223,223);
     color: #016f33;
 }
@@ -342,10 +343,11 @@ ul {
     color: #023a1b;
 }
 
+
 .menu-pag{
     margin-top: 60px;
-    margin-bottom: 60px;
 }
+
 
  .itens-menu{
     font-style:none ;
@@ -353,15 +355,18 @@ ul {
     color: black;
  }
 
+
  .itens-menu:hover{
      color: rgba(1, 1,1,0.5);
      text-decoration: none;
  }
+
+
 .identific::before{
     content: " ";
     height: 50px;
     width: 50px;
-    margin-left: -60px;
+    margin-left: -50px;
     margin-top: -10px;
     background-size: 50px;
     position: absolute;
@@ -376,7 +381,7 @@ ul {
     content: " ";
     height: 50px;
     width: 50px;
-    margin-left: -60px;
+    margin-left: -50px;
     margin-top: -10px;
     background-size: 50px;
     position: absolute;
@@ -391,7 +396,7 @@ ul {
     content: " ";
     height: 50px;
     width: 50px;
-    margin-left: -60px;
+    margin-left: -50px;
     margin-top: -10px;
     background-size: 50px;
     position: absolute;
@@ -400,9 +405,11 @@ ul {
     background-image: url(../images/credit-card.png);
 }
 
+
+
  .cont{
      margin-top: 40px;
-     width: 600px;
+     width: 500px;
      border-width: 1px;
      border-style: solid;
      border-color:rgb(226,223,223);
@@ -411,7 +418,9 @@ ul {
  .credito{
     margin-right: 6vw;
  }
- 
+ .boleto{
+
+ }
  .resume-ped{
     height: 600px;
  }
@@ -427,7 +436,6 @@ ul {
     height: 40px;
     background-repeat: no-repeat;
     background-position: center;
-    
 }
 
 .itau{
@@ -439,71 +447,29 @@ ul {
 .barra-boleto{
     background-image: url(../images/boleto.jpg);
 }
-.amex label{
+.amex{
     background-image: url(../images/AE.png);
 }
-.visa label{
+.visa{
     background-image: url(../images/VI.png);
 }
-.master label{
+.master{
     background-image: url(../images/MC.png);
 }
-.elo label{
+.elo{
     background-image: url(../images/EL.png);
 }
-.hiper label{
+
+.hiper{
     background-image: url(../images/HI.png);
 }
-.jbc label{
+.jbc{
     background-image: url(../images/JC.png);
 }
-.circ label{
+.circ{
     background-image: url(../images/DI.png);
 }
-.opcao-pagamento-cred-ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    margin-top: 10px;
-}
-.opcao-pagamento-cred-ul::after{
-    content: "";
-    clear: both;
-}
-.opcao-pagamento-cred{
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    float: left;
-    height: 40px;
-    position: relative;
-    width: 55px;
-    margin-left: 10px;
-    border-style: none;
-}
-.opcao-pagamento-cred label{
-    background-color:white;
-    background-size: 60px;
-    background-repeat:no-repeat;
-    background-position:center center;
-    height: 40px;
-    width: 55px;
-    cursor: pointer;
-    display: block;
-    font-size: 0;
-    position: absolute;
-    text-indent: 100%;
-    top: 1px;
-    bottom: 1px;
-    left: 1px;
-    right: 1px;
-}
-.opcao-pagamento-cred input:focus + label {
-    border: 4px solid #21b4d0;
-}
 
-.radio-cred{
-    visibility: hidden;
-}
 
 
 .input-radio-1{
@@ -545,25 +511,20 @@ ul {
 }
 .label-cred{
     margin-top: 20px;
-    margin-left: 30px;   
+    margin-left: 30px;
 }
-
  .num-cred{
     margin-left: 20px;
     width: 600px;
     border-radius: 20px;
  }
-.num-cred:focus{
-    border-radius: 20px;
-}
-
  .bandeiras{
      margin-left: 20px;
  }
 
 .data-cred{
     margin-left: 20px;
-    width: 200px;
+    width: 600px;
     border-radius: 20px;
 }
 .input-radio-4{
@@ -593,7 +554,7 @@ ul {
     font-size: 20px;
 }
 
-.li-pag{
+.li-pag {
     display: inline;
     margin-left: 40px;
     margin-right: 40px;
@@ -664,209 +625,90 @@ ul {
 }
 
 
-/* --------------------------------TELA DE CESTA------------------------------------------- */
-.cesta-tela{
-    color: #016f33;
-    margin-left: 10px;
-}
-.cesta-img{
-    font-size: 35px;
-    margin-left: 40px;
-    margin-top: 60px;
-}
-.cesta-img::after{
-    content: " ";
-    height: 50px;
-    width: 50px;
-    margin-left: -60px;
-    margin-top: -13px;
-    background-size: 50px;
-    position: absolute;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url(../images/basket\ -verde.png);
+/*estilo produto*/
+
+h6{
+    color: rgb(206, 52, 25);
 }
 
-.descricao-cesta{
-    background-color: #E2DFDF;
-    margin-top: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    border-top-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    width: 800px;
-}   
-.valor-cesta{
-}
-.cont-cesta{
-    margin-top: 40px;
-    border-width: 1px;
-    border-style: solid;
-    border-color:rgb(226,223,223);
-    background-color: transparent;
-    min-width: 820px;
-    max-width: 820px;
-    margin-right: 20px;
+.categoria-produto-links a {
+    color: #016f33 !important;
+    margin: 0 20px;
 }
 
-.produto-cesta{
-    margin-top: 30px;
-    margin-bottom: 30px;
+.cabecalho{
+    font-size:30px;
+    display: flex;
+    text-align: center;
+    color: #016f33 !important;
+}
+#cabBack{
+    color: #016f33 !important;
+    font-style: oblique;
+
+}
+/*#prodCentral{
+    margin-left:250px;
+ 
+
+}*/
+
+
+#valorProdIndividual{
+   font-size: 40px;
+   font-style: italic;
+   color: rgb(206, 52, 25);
+
 }
 
-.produto-card-cesta-descricao{
-    width: 120px;
-    height: 200px;
-    margin-left: 40px;
-    padding: 0px;
+#quant{
+    font-size:18px;
+    text-align:center;
 }
 
-.produto-card-cesta-imagem{
-    width: 150px;
-    height: 200px;
-    margin-left: 60px;
-    background-image: url(../images/caixa-remedio.jpg);
-    background-size: 200px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.produto-card-cesta-quantida{
-
-    width: 140px;
-    height: 200px;
-    margin-left: 30px;
-}
-.produto-card-cesta-valor-unitario{
-
-    width: 100px;
-    height: 200px;
-    margin-left: 40px;
-}
-.produto-card-cesta-apagar{
-
-    width: 35px;
-    height: 200px;
-    margin-left: 60px;
-    /* background-image: url(../images/lixeira.png); */
-}
-
-.descricao-produto-cesta{
-    list-style: none;
-    padding: 0px;
-}
-.descricao-marca-cesta{
-    font-size: 17px;
-    color: black;
-    font-weight: bold;
-}
-.descricao-fabricante-cesta{
-    color: #f1a658;
-    font-weight: bold;
-}
-.descricao-qtd-cesta{
+#qntTamanho{
+    font-size: 20px;
     
+}
+#alerta1, #alerta2{
+    border: 1px solid;
+    font-style: italic;
+    text-align: center;
+    padding:10px;
+    font-size: 15px;
 
 }
-.descricao-peso-cesta{
+
+.btnBuyProd{
+    color: #016f33 !important;
 
 }
+.veja{
+    margin: 40px 10px;
+    color: #016f33;
+    display: flex;
+    justify-content: start;
+    font-style: italic;
+}
+.prodFrete{
+    margin-top:50px;
+    font-size: 20px;
+    font-style: bold;
+    font-style: italic;
 
-.qt-cesta{
-    margin-top: 80px;
 }
-.card-price-cesta{
-    font-size: 22px;
-    text-align: center center;
-    position: relative;
-    top: 80px;
-    color: black;
+.car-desc{
+    font-size:20px;
 }
-.lixeira-cesta:hover{
-    text-decoration: none;
-    color: rgba(1, 1,1,0.5);
+#inputCep{
+    width: 0px;
 }
-.lixeira-cesta{
-    color: black;
-    font-size: 10px;
-    position: relative;
-    top: 100px;
-    left: 2px;
+.textoFrete{
+    display: flex;
+    text-align:center;
 }
-.lixeira-cesta::after{
-    content:" ";
-    background-image: url(../images/lixeira.png);
-    background-size: 22px;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: absolute;
-    bottom: 16px;
-    right: 5px;
-    width: 22px;
-    height: 22px;
-}
-.cont-cesta-detalhes{
-    border-style: solid;
-    border-width: 1px;
-    border-color: black;
-    min-width: 400px;
-    max-width: 400px;
-    border-radius: 30px;
-    margin-top: 30px;
-}
-.ul-resumo-cesta{
-    color: black;
-}
-.li-resumo-cesta{
-    font-size: 30px;
-    font-weight: bold;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}          
-.li-produto-cesta{}          
-.li-frete-vl-cesta{
-    margin-bottom: 20px;
-}
-.linha-cesta{
-    border-style: solid;
-    border-color: #ccc;
-    border-width: 1px;
-    width: 380px;
-    position: relative;
-    right: 30px;
-}
-.li-total-cesta{
-    font-size: 30px;
-    font-weight: bold;
-    margin-top: 40px;
-    margin-left: 40px;
-}
+.alinhaCEP{
+    display: flex;
 
-.li-vl-total-cesta{
-    font-size: 25px;
-    margin-top: 35px;
-    margin-left: 40px;
-}
-.btnc{
-    background-color: #016f33;
-    border-color: #016f33;
-    border-radius: 10px,0,10px,0;
-    margin-top: 30px;
-    margin-left: 50px;
-    margin-bottom: 30px;
-    width: 300px;
-    border-radius: 40px;
-}
-
-.btnfret{
-    width: 50px;
-}
-
-.frete-input{
-    width: 250px;
-    margin-left: 200px;
-}
-.frete-label{
-    margin-left: 210px;
-    margin-bottom: 0px;
+    background-color: lightgrey;
 }

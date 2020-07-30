@@ -9,7 +9,19 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+<script type="text/javascript">
 
+        function process(quant) {
+            var value = parseInt(document.getElementById("quant").value);
+            value += quant;
+            if (value < 1) {
+                document.getElementById("quant").value = 1;
+            } else {
+                document.getElementById("quant").value = value;
+            }
+        }
+
+    </script>
 <body>
     <div class="container home">
         <header>
@@ -69,62 +81,121 @@
                 </div>
             </div>
         </header>
-
+        
+        <div class="row col-6 justify-content-center cesta-tela">
+            <h2 class="row cesta-img">Minha Cesta</h2>
+        </div>
 
         <div class="row col justify-content-around cesta-tela">
-            <div class="cont-cesta">
-                <h2 class="row col cesta-img">Minha Cesta</h2>
+            
+            <div class="col cont-cesta">
                 <div class="row col produtos-cesta">
-                    <div class="row ">
-                        <div class="descricao-cesta ">
-                            <ul class="ul-item cesta"> 
-                                <li class="li-item-pag">Produto</li>
-                                <li class="li-item-pag">Descrição</li>
-                                <li class="li-item-pag">Quantidade</li>
-                                <li class="li-item-pag valor-cesta">Valor</li>
+                        <div class="row ">
+                            <div class="descricao-cesta ">
+                                <ul class="ul-item cesta"> 
+                                    <li class="li-item-pag">Produto</li>
+                                    <li class="li-item-pag">Descrição</li>
+                                    <li class="li-item-pag">Quantidade</li>
+                                    <li class="li-item-pag valor-cesta">Valor</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row produto-cesta">
+                            <div class="produto-card-cesta-imagem"></div>
+                            <div class="produto-card-cesta-descricao">
+                                <ul class="descricao-produto-cesta">
+                                    <li class="descricao-marca-cesta">AAS PROTECT 100MG</li>
+                                    <li class="descricao-fabricante-cesta">Sanofi</li>
+                                    <li class="descricao-qtd-cesta">30 Comprimidos</li>
+                                    <li class="descricao-peso-cesta">21g Peso do produto</li>
+                                </ul>
+                            </div>
+                            <div class="produto-card-cesta-quantida">
+                                <div data-app="product.quantity" id="quantidade">
+                                    <input type="button" class="btn btn-light " id="plus" value=' - ' onclick="process(-1)" />
+                                    <input id="quant" name="quant" class="text qt-cesta" size="1" type="text" value="1" maxlength="5" />
+                                    <input type="button" class="btn btn-light " id="minus" value='+' onclick="process(1)">
+                                </div>
+                            </div>
+                            <div class="produto-card-cesta-valor-unitario">
+                                <span class="card-price-cesta">
+                                    <span>R$</span>
+                                    13,29
+                                </span>
+                            </div>
+                            <div class="produto-card-cesta-apagar">
+                                <a href="#" class="lixeira-cesta">Excluir</a>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="calcula-frete">
+                    <form>
+                        <div class="form-group row">
+                            <ul>
+                                <li class="row">
+                                    <label for="frete" class="frete-label">Calcule o frete e o prazo:</label>
+                                </li>
+                                <li class="row">
+                                    <input type="text" id="frete"class="form-control frete-input">
+                                    <input type="button" class="form-control btn-outline-success btnfret" value="OK">
+                                </li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="row ">
-                        <div class="produto-card-cesta-imagem"></div>
-                        <div class="produto-card-cesta-descricao">
-                            <ul class="descricao-produto-cesta">
-                                <li class="descricao-marca-cesta">AAS PROTECT 100MG</li>
-                                <li class="descricao-fabricante-cesta">Sanofi</li>
-                                <li class="descricao-qtd-cesta">30 Comprimidos</li>
-                                <li class="descricao-peso-cesta">21g Peso do produto</li>
-                            </ul>
-                        </div>
-                        <div class="produto-card-cesta-quantida">
-                            <input type="number" name="quantidade-cesta" class="form-control qt-cesta" id="quantidade-cesta">
-                        </div>
-                        <div class="produto-card-cesta-valor-unitario">
-                            <span class="card-price-cesta">
-                                <span>R$</span>
-                                13,29
-                            </span>
-                        </div>
-                        <div class="produto-card-cesta-apagar"></div>
-                    </div>
+                    </form>
                 </div>
             </div>
 
-            <div class="cont-cesta"></div>
+            <div class="col-4 justify-content-center cont-cesta-detalhes">
+                
+                <div class="row">
+                    <ul class="ul-resumo-cesta">
+                        <li class="li-resumo-cesta">
+                            <span>Resumo</span>
+                        </li>
+                        <li class="li-produto-cesta">
+                            <span>
+                                <span>Produtos:</span>
+                                1
+                            </span>
+                        </li>
+                        <li class="li-frete-vl-cesta">
+                            <span>
+                                <span>Valor Frete: R$</span>
+                                0.00
+                            </span>
+                        </li>
+                        <li>
+                            <div class="linha-cesta"></div>
+                        </li>
+                        <li class="li-total-cesta">
+                            <span>
+                                Total:
+                            </span>
+                        </li>
+                        <li class="li-vl-total-cesta">
+                            <span>
+                                <span>R$</span>
+                                13.29
+                            </span>
+                        </li>
+                    </ul>
+                </div>
 
-
-
+                <div class="row ">
+                    <form action="">
+                        <button type="submit" class="btn btnc btn-primary">FINALIZAR COMPRA</button>      
+                    </form>
+                </div>
+            </div>
 
         </div>
 
-
-
-
-
-
-
-
-
-
+        <div class="row col-6 justify-content-center cesta-tela">
+            <form>
+                <input type="button" class="form-control btn-primary btnc cc" value="Continuar Comprando">
+            </form>       
+        </div>
 
 
         <footer>
