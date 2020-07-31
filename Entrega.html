@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="css/style-entrega2.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/header-footer2.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Entrega</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-light bg-light justify-content-center menu-naveg">
+            <a class="navbar-brand" href="#">
+                <img class="logosuperior" src="images/logo raia redimensionado.png" width="30" height="30" 
+                class="d-inline-block align-top" alt=""></a> 
+                <!-- <img class="logosuperior" src="images/headphones.png" width="30" height="30"alt=""></a> -->
+                
+            <div class="h1 logo-color">Central de Atendimento</div>
+        </nav>
+    </header>
+
+    <div class="container ">
+
+        <div class="row py-5">
+            <div class="col-md-4 justify-content-center">
+                <div class="thumbnail">
+                    <img class="float-left logosSuperiores" src="images/usuario.png" alt="Responsive image">
+                    <a href="#" class="h5 hover-tela-p text-menu"><b>Identificação</b></a>
+                    <div class="h1 small text-menu">Olá, caro cliente</div>
+                </div>
+
+            </div>
+            <div class="col-md-4 justify-content-center">
+                <div class="thumbnail">
+                    <img class="float-left logosSuperiores" src="images/entrega.png">
+                    <a href="#" class="h5 hover-tela-p text-menu"><b>Entrega</b></a>
+                    <div class="h1 small text-menu">Receba seu pedido na loja</div>
+                </div>
+            </div>
+            <div class="col-md-4 justify-content-center">
+                <div class="thumbnail">
+                    <img class="float-left logosSuperiores" src="images/pagamento.png">
+                </div>
+                <a href="#" class="h5 hover-tela-p text-menu"><b>Pagamento</b></a>
+                <div class="h1 small text-menu">Escolha a forma de pagamento</div>
+            </div>
+        </div>
+        <!--Coluna 1 dos dados de entrega-->
+        <div class="row">
+            <div class="col-sm-6">
+                <form>
+                    <div class="formLogin">
+                        <div class="form-group col-9">
+                            <label for="cep">CEP*</label>
+                            <input type="text" class="form-control" id="cep" placeholder="Ex: 00000-000">
+                            <small id="emailHelp" class="form-text text-muted cep"></small>
+                        </div>
+                        <div class="form-group col-9">
+                            <label for="numero">Número*</label>
+                            <input type="text" class="form-control" id="numero" placeholder="Ex: 123">
+                            <small id="#" class="form-text text-muted num-endereco"></small>
+                        </div>
+                        <div class="form-group form-check">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!--Coluna 2 dos dados de entrega-->
+            <div class="col-sm-6">
+                <form>
+                    <div class="formLogin">
+                        <div class="form-group col-9">
+                            <label for="telefone">Telefone para Contato*</label>
+                            <input type="text" class="form-control" id="telefone" placeholder="DDD + 00000-0000">
+                            <small id="#" class="form-text text-muted"></small>
+                        </div>
+                        <div class="form-group col-9">
+                            <label for="complemento">Complemento</label>
+                            <input type="text" class="form-control" id="complemento" placeholder="Ex: 456">
+                            <small id="#" class="form-text text-muted complemento"></small>
+                        </div>
+                        <div class="form-group form-check">
+                        </div>
+                        <button style="background-color: #016f33!important" type="submit"
+                            class="btn btn-primary  float-right salva-endereco">SALVAR NOVO ENDEREÇO</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <br>
+        <br>
+        <!--Cards de seleção de entrega-->
+        <div class="row card-endereco">
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+
+                        <h5 class="card-title">
+                            <img class="retira-loja" src="images/retira-loja.png">RETIRAR NA LOJA</h5>
+                        <p class="card-text">Receba em até <b>1 HORA</b> após a aprovação do pagamento</p>
+                        <a style="background-color: #016f33!important" href="#"
+                            class="btn btn-primary btn-select-loja">ESCOLHER LOJA</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card card-loja">
+                    <div class="card-body">
+                        <h5 class="card-title"> <img class="recebe-endereco"
+                                src="images/recebe-endereco.png"> RECEBER NO MEU ENDEREÇO</h5>
+                        <p class="card-text">Selecione o endereço desejado e receba no conforto do seu lar</p>
+                        <a style="background-color: #016f33!important" href="#"
+                            class="btn btn-primary btn-select-endereco">SELECIONAR ENDEREÇO</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--FOOTER-->
+    <footer>
+        <div class="footerCad col-12">
+        <div class="row">
+            <img class="img-footer" src="images/headphones.png" class="img-fluid" alt="Responsive image">
+            <div class="text-footer">
+                <a href="#" class="atenCad col-3 ml-300" style="color: #016f33 !important"> RD Atendimento
+                    ao
+                    cliente</a>
+                <a href="#" class="contCad col-3" style="color: #016f33 !important"> Dúvidas elogios e
+                    reclamações
+                </a>
+                <a href="#" class="racCad col-3" style="color: #016f33 !important">| rac@rd.com.br |</a>
+                <a href="#" class="contCad col-3" style="color: #016f33 !important"> De Segunda a Sabado das
+                    08h
+                    ás
+                    21h,
+                    inclusive feriados.</a>
+            </div>
+        </div>
+        </div>
+    </footer>
+</body>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+</html>

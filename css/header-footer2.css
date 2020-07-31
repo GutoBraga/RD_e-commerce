@@ -1,0 +1,160 @@
+/* <header>
+            <div class="row justify-content-center logo-pagamento">
+                <a class="logo-rd col-6" href="#"></a>
+            <!-- <div class="logo-rd col-6"></div> -->
+            
+                <a class="central-atendimento col-6" href="#">Central de Atendimento</a>
+            </div>
+</header> */
+
+/* <footer>
+<div class="row footer-pagamento estilo-fot">
+    
+<div class="col-4 justify-content-center">
+    <a href="#" class="row justify-content-center atendimento-cliente estilo-fot dim">Rd Atendimento ao cliente</a>
+    <a href="#" class="row justify-content-center numero-center estilo-fot">3003-7241</a>
+   
+</div>
+    
+<div class="col justify-content-center">
+    
+    <a href="#" class="row justify-content-center estilo-fot dim ">Dúvidas, elogios e reclamações: | rac@rd.com.br | De Segunda a Sábado das 08h às 21h, inclusive feriados.</a>
+    <a href="#" class="row justify-content-center termos-uso estilo-fot">Termos de uso.</a>
+</div>
+
+</div>
+</footer> */
+
+.logo-pagamento {
+    height: 147px;
+    background-color: rgb(226,223,223);
+}
+.logo-rd{
+
+    margin-top: 20px;
+    height: 100px;
+    width: 100px;
+    background-image: url(../images/logo\ raia\ redimensionado.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100px;
+}
+
+
+.central-atendimento{
+    color: #016f33;
+    margin-top: 60px;
+}
+.central-atendimento::before{
+    content: " ";
+    margin-left:-50px;
+    margin-top: -15px;
+    height: 50px;
+    width: 50px;
+    background-image: url(../images/fone-verde.png);
+    position: absolute;
+
+}
+
+.central-atendimento:hover{
+    text-decoration: none;
+    color: #023a1b;
+    background: none;
+}
+
+.footer-pagamento {
+    top: 10vh;
+    bottom: 4vh;
+    margin-top: 60px;
+    background-color: rgb(226,223,223);
+    color: #016f33;
+}
+.estilo-fot {
+    color: #016f33;
+}
+.estilo-fot:hover{
+    font-style: none;
+    text-decoration: none;
+    color: #023a1b;
+}
+html,
+body
+{
+  height: 100%;
+}
+
+@media (max-width: 740px) {
+  html,
+  body
+{
+    height: 1000px;
+  }
+}
+@media (min-width: 800px) and (max-width: 850px) {
+  html,
+  body{
+    height: 600px;
+  }
+}
+.logo-color{
+    color: var(--verdetexto);
+  }
+  .hover-tela-p:hover{
+    color: var(--verdetexto);
+    text-decoration: none;
+  }
+.logosuperior {
+    margin-top: -15px;
+    max-width: 100px;
+    max-height: 100px;
+    width: auto;
+    height: auto;
+}
+
+.logosSuperiores {
+  margin-right: 5px;
+  margin-top: 5px;
+  max-width: 40px;
+  max-height: 40px;
+}
+
+.retira-loja {
+  /*Imagem receber no endereço*/
+  max-width: 40px;
+  max-height: 40px;
+  width: auto;
+  height: auto;
+}
+
+.recebe-endereco {
+  /*Imagem receber na loja*/
+  max-width: 40px;
+  max-height: 40px;
+  width: auto;
+  height: auto;
+}
+
+.text-menu{
+  color: var(--cinzatexto);
+}
+
+
+.footerCad {
+  text-align: center;
+  background: var(--corheader-footer);
+  padding: 40px;
+  margin-top: 35px;
+  position: relative;
+  bottom: 0;
+}
+
+.img-footer {
+  margin-left: 150px;
+}
+
+:root {
+  --laranjatexto: #f1a658;
+  --cinzatexto: #8d8178;
+  --verdetexto: #016f33;
+  --corheader-footer: #f2f0ee;
+}
