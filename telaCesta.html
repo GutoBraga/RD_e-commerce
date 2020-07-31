@@ -9,6 +9,7 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estiloTelaCesta.css">
     <link rel="stylesheet" href="css/estiloTelaPagamento.css">
+    <link rel="stylesheet" href="css/header-footer.css">
 
 
 
@@ -31,6 +32,65 @@
     <div class="container-fluid">
 
         <!-- headeraqui -->
+        <header>
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <div class="col-lg-6 col-12 superior-topo">
+                            <a class="navbar-brand" href="#"><img src="images/logo raia redimensionado.png"
+                                    class="logo-home"></a>
+                            <form class="form-inline">
+                                <input class="form-control mr-sm-1 text-input" type="Search"
+                                    placeholder="O que deseja encontrar?" class="buscar">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="botao-busca"><img
+                                        src="images/search.png" id="imagem-busca"></button>
+                            </form>
+                        </div>
+                        <div class="col-lg-6 col-12 superior-topo img-red">
+                            <div class="login">
+                                <img src="images/user.png">
+                                <a href="">Olá Faça seu Login<br>
+                                    Minha conta</a>
+                            </div>
+                            <div class="pedidos">
+                                <img src="images/box.png">
+                                <a href="">Meus <br> Pedidos</a>
+                            </div>
+                            <div class="cart">
+                                <div class="left-cart"></div>
+                                <div class="center-cart">
+                                    <span class="quantity">3 Cesta</span>
+                                    <span class="value">R$ 3,80</span>
+                                </div>
+                                <div class="right-cart"></div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand navbar-light" style="background-color: #016f33;">
+                        <div class="collapse navbar-collapse categoria-header" id="navbarNavAltMarkup">
+                            <div class="navbar-nav categoria-header-links">
+                                <ul>
+                                    <li><a class="nav-item nav-link" href="#">Medicamentos</a></li>
+                                    <li><a class="nav-item nav-link" href="#">Saúde</a></li>
+                                    <li><a class="nav-item nav-link" href="#">Vitaminas e Suplementos</a></li>
+                                    <li><a class="nav-item nav-link" href="#">Beleza</a></li>
+                                    <li><a class="nav-item nav-link" href="#">Dermocosméticos</a></li>
+                                    <li><a class="nav-item nav-link" href="#">Cuidados diários</a></li>
+                                    <li><a class="nav-item nav-link" href="#">Infantil</a></li>
+                                    <li><a class="nav-item nav-link" href="#">Nossas Marcas</a></li>
+                                    <li><a class="nav-item nav-link" href="#">Promoções</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
 
         <div class="row col-6 justify-content-center cesta-tela">
             <h2 class="row cesta-img">Minha Cesta</h2>
@@ -151,7 +211,153 @@
         <!-- footeraqui -->
 
     </div>
+    <footer>
+        <div class="row footer-separacao">
+            <div class="col-lg-12 col-12"></div>
+        </div>
+        <div class="row links-footer">
+            <div class="col-lg-3 col-6 links-footer-pos">
+                <ul>
+                    <li>
+                        <h5>Institucional</h5>
+                    </li>
+                    <li>
+                        <a href="">Nossa história</a>
+                    </li>
+                    <li>
+                        <a href="">Trabalhe conosco</a>
+                    </li>
+                    <li>
+                        <a href="">Política e privacidade</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-6 links-footer-pos">
+                <ul>
+                    <li>
+                        <h5>Serviços</h5>
+                    </li>
+                    <li>
+                        <a href="">Lojas da Raia</a>
+                    </li>
+                    <li>
+                        <a href="">Lojas da Drogasil</a>
+                    </li>
+                    <li>
+                        <a href="">Univers</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-6 links-footer-pos">
+                <ul>
+                    <li>
+                        <h5>Minha conta</h5>
+                    </li>
+                    <li>
+                        <a href="">Criar novo cadastro</a>
+                    </li>
+                    <li>
+                        <a href="">Editar endereços</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-6 links-footer-pos">
+                <ul>
+                    <li>
+                        <h5>Atendimento</h5>
+                    </li>
+                    <li>
+                        <a href="">Central de atendimento</a>
+                    </li>
+                    <li>
+                        <a href="">Formas de pagamento</a>
+                    </li>
+                    <li>
+                        <a href="">Prazo de entrega</a>
+                    </li>
+                    <li>
+                        <a href="">Reembolso</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row contatos">
+            <div class="col-md-6 col-12 item-contato">
+                <div class="">
+                    <h5><strong>Central de atendimento</strong></h5>
+                    <p>9999-9999</p>
+                    <p>Horário de atendimento das 8h às 21h,</p>
+                    <p> de segunda a sábado</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-12 item-contato">
+                <div class="">
+                    <h5><strong>Televendas</strong></h5>
+                    <p>9999-9999</p>
+                    <p>Horário de atendimento das 7h às 21h,</p>
+                    <p> de segunda a segunda</p>
+                </div>
+            </div>
 
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-12">
+                <div id="anvisa-footer">
+                    <h5><strong>A Raia Drogasil segue as determinações da </strong> <img src="images/anvisa.png">
+                    </h5>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin: 20px;">
+            <div class="col-12">
+                <h5><strong>Meios de pagamento</strong></h5>
+                <div class="pagamentos-footer">
+                    <nav class="nav">
+                        <img src="images/237.png">
+                        <img src="images/341.png">
+                        <img src="images/AE.png">
+                        <img src="images/VI.png">
+                        <img src="images/MC.png">
+                        <img src="images/DI.png">
+                        <img src="images/EL.png">
+                        <img src="images/HI.png">
+                        <img src="images/JC.png">
+                        <img src="images/boleto.jpg">
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="row info-footer">
+            <div class="col-lg-3 col-12 logo-footer">
+                <div>
+                    <img src="images/logo raia redimensionado.png" id="logo-footer">
+                </div>
+            </div>
+            <div class="col-lg-9 col-12">
+                <p><strong>As informações contidas neste site não devem ser usadas para automedicação e não
+                        substituem,
+                        em hipótese alguma,
+                        as orientações dadas pelo profissional da área médica. Somente o médico está apto a
+                        diagnosticar qualquer problema de
+                        saúde e prescrever o tratamento adequado. Ao persistirem os sintomas, um médico deverá ser
+                        consultado. Os preços e
+                        promoções divulgados no site são válidos apenas para compras feitas pela internet. Maiores
+                        esclarecimentos,
+                        consultar o site: www.anvisa.gov.br. A Raia Drogasil SA trabalha com as tecnologias mais
+                        avançadas de proteção de dados,
+                        para que você possa realizar suas compras com tranquilidade. A privacidade e a segurança dos
+                        clientes são compromissos
+                        da Raia Drogasil SA. Todos os pedidos efetuados estão sujeitos à confirmação da
+                        disponibilidade de produto
+                        em nosso estoque.</strong></p>
+            </div>
+        </div>
+        <div class="row copyr">
+            <div class="col-lg-12 col-md-12 col-12">
+                <h5><strong>Política de privacidade</strong> | 2020 RD. Todos os direitos reservados</h5>
+            </div>
+        </div>
+    </footer>
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
