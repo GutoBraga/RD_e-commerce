@@ -11,15 +11,15 @@
 
 
 <body>
-    <div class="container col-10 cont-pagamento">
-
-        <div class="row justify-content-center logo-pagamento">
-            <div class="logo-rd col-6"></div>
+    <div class="container-fluid col cont-pagamento">
+        <header>
+            <div class="row justify-content-center logo-pagamento">
+                <a class="logo-rd col-6" href="#"></a>
+            <!-- <div class="logo-rd col-6"></div> -->
             
-            <a class="central-atendimento col-6" href="#">Central de Atendimento</a>
-        </div>
-
-
+                <a class="central-atendimento col-6" href="#">Central de Atendimento</a>
+            </div>
+        </header>
         
         <div class="row col justify-content-around menu-pag">
             <a href="#" class="itens-menu identific " >Identificação</a>
@@ -27,210 +27,200 @@
             <a href="#" class="itens-menu pag">Pagamento</a>                      
         </div>
         
-
         <div class="row col justify-content-center info-pag">
-            <form>
-                <div class="form-group">
-
+            <form name="formulario_pagamento" id="form-pagamento">
+                <div class="form-group">               
                     <div class="row">
                         <div class="cont debito">
                             <div class="row pagamento-debito">
-                                <input type="radio" id="opcao-pagamento" class="input-radio-1 col-3"  >
-                                <label for="opcao-pagamento" id="opcao-pagamento" class="label-pagamento">Debito</label>
+                                    <input type="radio" name="forma-de-pagamento" id="opcao-pagamento" class="input-radio-1 col-3" >
+                                    <label for="opcao-pagamento" id="opcao-pagamento" class="label-pagamento">Debito</label>
                             </div>                        
-
                             <div class="row opcao debito">  
-                                <div class="bandeira itau col-3"></div>
-                                <div class="bandeira brad col-3"></div>
+                                        <div class="bandeira itau col-3"></div>
+                                        <div class="bandeira brad col-3"></div>
                             </div>
-
                             <div class="row opcao debito">      
-                                <input type="radio" id="opcao-debito " class="input-radio-2 col-3" >
-                                <input type="radio" id="opcao-debito " class="input-radio-2 col-3" >
+                                        <input type="radio" id="opcao-debito-itau" name="opcao-pagamento" class="input-radio-2 col-3" >
+                                        <input type="radio" id="opcao-debito-brad" name="opcao-pagamento" class="input-radio-2 col-3" >
                             </div>
                         </div>
                     </div>
-
-
                     <div class="row">
                         <div class="cont boleto">
                             <div class="row pagamento-boleto">
-                                <input type="radio" id="opcao-pagamento" class="input-radio-1 col-3"  >
-                                <label for="opcao-pagamento" id="opcao-pagamento" class="label-pagamento">Boleto</label>
+                                        <input type="radio"name="forma-de-pagamento"  id="opcao-pagamento-boleto" class="input-radio-1 col-3"  >
+                                        <label for="opcao-pagamento" id="opcao-pagamento" class="label-pagamento">Boleto</label>
                             </div>
-
                             <div class="row opcao boleto">  
-                                <div class="bandeira barra-boleto col-3"></div>
+                                        <div class="bandeira barra-boleto col-3"></div>
                             </div>
-
                             <div class="row opcao boleto">      
-                                <input type="radio" id="opcao-boleto" class="input-radio-2 col-3">
+                                        <input type="radio" id="opcao-boleto" name="opcao-pagamento" class="input-radio-2 col-3">
                             </div>
-
-
                         </div>
-                        
                     </div>
-                    
                     <div class="row">
-                        <div class="cont credito">
-                            <div class="row pagamento-credito">
-                                <input type="radio" id="opcao-pagamento" class="input-radio-1 col-3"  >
-                                <label for="opcao-pagamento" id="opcao-pagamento" class="label-pagamento">Crédito</label>
+                            <div class="cont credito">
+                                    <div class="row pagamento-credito">
+                                        <input type="radio" name="forma-de-pagamento" id="opcao-pagamento" class="input-radio-1 col-3"  >
+                                        <label for="opcao-pagamento" id="opcao-pagamento" class="label-pagamento">Crédito</label>
+                                    </div>
+                                    <div class="row col dados-card-cred">
+                                        <label for="num-card-cred" class="label-cred">Numero do Cartão*</label>
+                                    </div>
+                                    <div class="row col dados-card-cred">
+                                        <input pattern="\d{16}$" type="number"  id ="num-card-cred" class="num-cred form-control" required> 
+                                    </div>                            
+                                    <div class="row bandeiras">
+                                        <ul class="opcao-pagamento-cred-ul" required>
+                                            <li class="opcao-pagamento-cred amex">
+                                                <input type="radio" name="opcao-pagamento" id="amex">
+                                                <label for="amex"></label>
+                                            </li>
+                                            <li class="opcao-pagamento-cred visa">
+                                                <input type="radio" name="opcao-pagamento" id="visa">
+                                                <label for="visa"></label>
+                                            </li>
+                                            <li class="opcao-pagamento-cred master">
+                                                <input type="radio" name="opcao-pagamento" id="master">
+                                                <label for="master"></label>
+                                            </li>
+                                            <li class="opcao-pagamento-cred elo">
+                                                <input type="radio" name="opcao-pagamento" id="elo">
+                                                <label for="elo"></label>
+                                            </li>
+                                            <li class="opcao-pagamento-cred hiper">
+                                                <input type="radio" name="opcao-pagamento" id="hiper">
+                                                <label for="hiper"></label>
+                                            </li>
+                                            <li class="opcao-pagamento-cred jbc">
+                                                <input type="radio" name="opcao-pagamento" id="jbc">
+                                                <label for="jbc"></label>
+                                            </li>
+                                            <li class="opcao-pagamento-cred circ">
+                                                <input type="radio" name="opcao-pagamento" id="circ">
+                                                <label for="circ"></label>
+                                            </li>
+                                        </ul>
+                                    </div>                            
+                                    <div class="row col dados-card-cred">
+                                        <label for="nome-card-cred" class="label-cred">Nome do Titular*</label>
+                                    </div>
+                                    <div class="row col dados-card-cred">
+                                        <input type="text" id ="nome-card-cred" class="num-cred form-control" required>
+                                    </div>
+                                    <div class="row col dados-card-cred">
+                                        <label for="date-card-cred" class="label-cred">Data de Vencimento*</label>
+                                    </div>
+                                    <div class="row col dados-card-cred">
+                                        <input type="number" pattern="\d{2}$" id ="date-card-cred" class="data-cred form-control" placeholder="Mês" required>
+                                        <input type="number" pattern="\d{4}$" id ="date-card-cred" class="data-cred form-control" placeholder="Ano" required>
+                                    </div>
+                                    <div class="row col dados-card-cred">
+                                        <label for="cv-card-cred" class="label-cred">Código de validação*</label>
+                                    </div>
+                                    <div class="row col dados-card-cred">
+                                        <input type="number" id ="cv-card-cred" class="validacao num-cred form-control" required>
+                                    </div>
+                                    <div class="row col dados-card-cred">
+                                        <label for="np-card-cred" class="label-cred">Numero de Parcelas*</label>
+                                    </div>
+                                    <div class="row col dados-card-cred">
+                                        <input type="number" id ="np-card-cred" class="Parcelas num-cred form-control" required>
+                                    </div>
+                                    <div class="row col dados-card-cred">
+                                        <input type="radio" id="opcao-debito " class="input-radio-4" >
+                                        <label for="salvar dados-card-cred" class="label-salva">Salvar dados do cartão de crédito</label>
+                                    </div>
                             </div>
-
-                            <div class="row col dados-card-cred">
-                                <label for="num-card-cred" class="label-cred">Numero do Cartão*</label>
-                            </div>
-                            <div class="row col dados-card-cred">
-                                <input type="text" id ="num-card-cred" class="num-cred">
-                            </div>
-                            
-                            <div class="row bandeiras">
-                                <div class="bandeira amex"></div>
-                                <div class="bandeira visa"></div>
-                                <div class="bandeira master"></div>
-                                <div class="bandeira elo"></div>
-                                <div class="bandeira hiper"></div>
-                                <div class="bandeira jbc"></div>
-                                <div class="bandeira circ"></div>
-                            </div>
-                            
-                            <div class="row col dados-card-cred">
-                                <label for="nome-card-cred" class="label-cred">Nome do Titular*</label>
-                            </div>
-                            <div class="row col dados-card-cred">
-                                <input type="text" id ="nome-card-cred" class="num-cred">
-                            </div>
-
-                            <div class="row col dados-card-cred">
-                                <label for="date-card-cred" class="label-cred">Data de Vencimento*</label>
-                            </div>
-                               
-                            <div class="row col dados-card-cred">
-                                <input type="date" id ="date-card-cred" class="data-cred">
-                            </div>
-
-                            <div class="row col dados-card-cred">
-                                <label for="cv-card-cred" class="label-cred">Código de validação*</label>
-                            </div>
-                               
-                            <div class="row col dados-card-cred">
-                                <input type="number" id ="cv-card-cred" class="validacao num-cred">
-                            </div>
-
-
-
-                            <div class="row col dados-card-cred">
-                                <label for="np-card-cred" class="label-cred">Numero de Parcelas*</label>
-                            </div>
-                               
-                            <div class="row col dados-card-cred">
-                                <input type="number" id ="np-card-cred" class="Parcelas num-cred">
-                            </div>
-
-                            <div class="row col dados-card-cred">
-                                <input type="radio" id="opcao-debito " class="input-radio-4" >
-                                <label for="salvar dados-card-cred" class="label-salva">Salvar dados do cartão de crédito</label>
-                            </div>
-                                
-
-
-
-                        </div>
                     </div>
+                    <button type="submit" class="btn btnf btn-primary">FINALIZAR COMPRA</button>    
                 </div>
-            </form>
-            
-            <div class="resumo-pedido">
+            </form >
+            <!-- <form name="formulario_pagamento" id="form-pagamento"> -->
+                <!-- <div class="form-group"> -->
+                    <div class="resumo-pedido">
+                        <div class="row">
+                           <h2 class="pedido-cupom">Cupom de desconto</h2>
+                        </div>
+                        <div class="row">
+                                <input type="text" class="num-cp form-control"> 
+                        </div>
+                        <div class="row">
+                                <h1 class="pedido-text">Resumo do pedido</h1>
+                        </div>
+                        <div class="row">
+                                <div class="cont resume-ped">
+                                    <div class="row col">
+                                        <ul class="ul-item">
+                                            <li class="li-item-pag">Produto</li>
+                                            <li class="li-item-pag">Qtd</li>
+                                            <li class="li-item-pag">Valor</li>
+                                        </ul>
+                                    </div>
+                                    <div class="row col">
+                                        <ul class="ul-item1">
+                                            <li class="li-pag item1">
+                                                <textarea name="nome-produto" class="txted nome-produto" id="#" >AAS PROTECT 100MG Sanofi 30 Comprimidos 21g Peso do produto</textarea>
 
-                <div class="row">
-                    <h2 class="pedido-cupom">Cupom de desconto</h2>
-                </div>
-                <div class="row">
-                    <input type="text" class="num-cp"> 
-                </div>
-                <div class="row">
-                    <h1 class="pedido-text">Resumo do pedido</h1>
-                </div>
-                <div class="row">
-                    <div class="cont resume-ped">
-                        <div class="row col">
-                            <ul class="ul-item">
-                                <li class="li-item-pag">Produto</li>
-                                <li class="li-item-pag">Qtd</li>
-                                <li class="li-item-pag">Valor</li>
-                            </ul>
-                        </div>
-                        <div class="row col">
-                            <ul class="ul-item1">
-                                <li class="li-pag item1">
-                                    <!-- <input type="text" class="nome-produto" placeholder="AAS
-                                    PROTECT
-                                    100MG
-                                    Sanofi
-                                    30 Comprimidos
-                                    21g Peso do
-                                    produto" > -->
-                                    <textarea name="nome-produto" class="txted nome-produto" id="#" >AAS PROTECT 100MG Sanofi 30 Comprimidos 21g Peso do produto</textarea>
-
-                                </li>
-                                <li class="li-pag Qtd">
-                                    <!-- <input type="span" class="qtd-produto"> -->
-                                    <textarea name="qtd-produto" class="txted qtd-produto" id="#" >1</textarea>
-                                </li>
-                                <li class="li-pag Valor">
-                                    <textarea name="valor-produto" class="txted valor-produto" id="#">R$12,99</textarea>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="row col">
-                            <ul class="ul-item">
-                                <li class="li-pag ">
-                                    Subtotal:
-                                </li>
-                                <li class="li-pag Valor">
-                                    <!-- <input type="span" class="valor-produto-sub"> -->
-                                    <textarea name="valor-produto" class="valor-produto-sub id="#">R$12,99</textarea>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="row col">
-                            <ul class="ul-item">
-                                <li class="li-pag ">
-                                    Frete(Compre e Retire)
-                                </li>
-                                <li class="li-pag ">
-                                    Gratis
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="row col">
-                            <ul class="ul-item">
-                                <li class="li-pag ">
-                                    Total
-                                </li>
-                                <li class="li-pag ">
-                                    <!-- <input type="span" class="valor-produto-sub"> -->
-                                    <textarea name="valor-produto" class="valor-produto-total id="#">R$12,99</textarea>
-                                </li>
-                            </ul>
-                        </div>
+                                            </li>
+                                            <li class="li-pag Qtd">
+                                                <!-- <input type="span" class="qtd-produto"> -->
+                                                <textarea name="qtd-produto" class="txted qtd-produto" id="#" >1</textarea>
+                                            </li>
+                                            <li class="li-pag Valor">
+                                                <textarea name="valor-produto" class="txted valor-produto" id="#">R$12,99</textarea>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="row col">
+                                        <ul class="ul-item">
+                                            <li class="li-pag ">
+                                                Subtotal:
+                                            </li>
+                                            <li class="li-pag Valor">
+                                                <!-- <input type="span" class="valor-produto-sub"> -->
+                                                <textarea name="valor-produto" class="valor-produto-sub id="#">R$12,99</textarea>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="row col">
+                                        <ul class="ul-item">
+                                            <li class="li-pag ">
+                                                Frete(Compre e Retire)
+                                            </li>
+                                            <li class="li-pag ">
+                                                Gratis
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="row col">
+                                        <ul class="ul-item">
+                                            <li class="li-pag ">
+                                                Total
+                                            </li>
+                                            <li class="li-pag ">
+                                                <!-- <input type="span" class="valor-produto-sub"> -->
+                                                <textarea name="valor-produto" class="valor-produto-total id="#">R$12,99</textarea>
+                                            </li>
+                                        </ul>
+                                    </div>
 
 
+                                </div>
+                        </div>
+                        <!-- <div class="row">  
+                            <button type="submit" class="btn btnf btn-primary">FINALIZAR COMPRA</button>  
+                        </div> -->
                     </div>
-                </div>
-                <div class="row">
-                    <button type="button" class="btn btnf btn-primary">FINALIZAR COMPRA</button>
-                </div>
-
-            </div>
+                <!-- </div>    -->
+                  
+            <!-- </form>   -->
         </div>
 
-
-
-
-        <div class="row col footer-pagamento estilo-fot">
+        <footer>
+            <div class="row footer-pagamento estilo-fot">
                 
             <div class="col-4 justify-content-center">
                 <a href="#" class="row justify-content-center atendimento-cliente estilo-fot dim">Rd Atendimento ao cliente</a>
@@ -243,7 +233,9 @@
                 <a href="#" class="row justify-content-center estilo-fot dim ">Dúvidas, elogios e reclamações: | rac@rd.com.br | De Segunda a Sábado das 08h às 21h, inclusive feriados.</a>
                 <a href="#" class="row justify-content-center termos-uso estilo-fot">Termos de uso.</a>
             </div>
-        </div>
+
+            </div>
+        </footer>
         
 
     </div>
