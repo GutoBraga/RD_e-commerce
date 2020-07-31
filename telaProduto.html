@@ -90,7 +90,7 @@
         <div class="col-md-12 container">
             <div class="row">
                 <div class="col-md-6" style="float:left">
-                    <div class="card mb-2">
+                    <div class="zoom mb-2">
                         <img class="card-img-top card-imagem-produto" src="images/caixa-remedio.jpg"
                             alt="Card image cap">
                     </div>
@@ -106,13 +106,13 @@
                     </div>
                 </div>
 
-                <div class="col-md-6">
+                <div class="info col-md-6">
                     <h3>Medicamento Genérico</h3>
                     <h6>Medley</h6>
                     <p>300g</p>
                     <br>
-                    <p><a style="color: #016f33 !important" href="#">Caracteristicas</a> |<a
-                            style="color: #016f33 !important" href="#"> Descrição</a></p>
+                    <p id="infocd"><a style="color: #016f33 !important" href="#">Caracteristicas</a> |
+                        <a style="color: #016f33 !important" href="#"> Descrição</a></p>
                     <br>
                     <br>
                     <br>
@@ -132,16 +132,11 @@
                     </div>
                 </div>
             </div>
-
         </div>
-
-
-
-
 
         <div class="row veja">
             <div class="col-md-6">
-                <h2>Veja Também</h2>
+                <h2>veja também</h2>
                 <div class="carrossel-produtos">
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
@@ -191,7 +186,7 @@
                     <p id="prod"><img src="images/truck.png">Calcular Frete</p>
                 </div>
 
-                <div class="input-group mb-3">
+                <div class="tamanhoCepProd input-group mb-3">
                     <input type="text" class="form-control" placeholder="Digite seu CEP"
                         aria-label="Recipient's username" aria-describedby="button-addon2">
                     <div class="input-group-append">
@@ -199,7 +194,7 @@
                                 width="18" height="18"></button>
                     </div>
                 </div>
-                <div class="col-md-12">Retire na loja (somente cartão de crédito)
+                <div class="textoProdFrete col-md-12">Retire na loja (somente cartão de crédito)
                     *O prazo de retirada do pedido inicia-se após a confirmação do pagamento. Escolha a forma de entrega
                     na página de pagamento.
                 </div>
@@ -323,26 +318,33 @@
                 </div>
             </div>
 
-            <div class="row car-desc">
-                <ul class="nav nav-tabs">
-                    <li class="active"><a data-toggle="tab" href="#Caracteristicas">Caracteristicas</a></li>
-                    <li><a data-toggle="tab" href="#Descrição">Descrição</a></li>
+            <div class="col-md-12 carDesc">
+                <div class="row car-desc">
+                    <ul class="nav nav-tabs">
+                        <li class="active-prod"><a data-toggle="tab" href="#Caracteristicas"style="color: #016f33 !important">Caracteristicas</a></li> |
+                        <li><a class="notactive-prod" data-toggle="tab" href="#Descrição"style="color: #016f33 !important">Descrição</a></li>
 
-                </ul>
+                    </ul>
 
-                <div class="tab-content">
-                    <div id="Caracteristicas" class="tab-pane fade in active">
-                        <h3>Caracteristicas</h3>
-                        <p>Caracteristicas do produto aqui!!</p>
+                    <row class="col-md-12">
+                    <div class="tab-content">
+                        <div id="Caracteristicas" class="tab-pane fade">
+                            <li><b>Código:</b> 17529</li>
+                            <li><b>Marca:</b> Medley</li>
+                            <li><b>EAN:</b> 1032165465215</li>
+                            <li><b>Fabricante:</b> Medley</li>
+                            <li><b>Peso:</b> 20gr</li>
+                            <li><b>Quantidade:</b> 60cps</li>
+                            <li><b>Principio Ativo:</b> Dipirona</li>
+                        </div>
+                        <div id="Descrição" class="tab-pane fade">
+                            <p>A dipirona é um medicamento utilizado no tratamento de febre e dor. Os efeitos antitérmico e analgésico podem ser esperados em 30 a 60 minutos após a administração e geralmente persistem por aproximadamente 4 horas.</p>
+                        </div>
                     </div>
-                    <div id="Descrição" class="tab-pane fade">
-                        <h3>Descrição</h3>
-                        <p>Descrição do produto aqui!</p>
-                    </div>
+                    </row>
+
                 </div>
             </div>
-
-
 
             <footer>
                 <div class="row footer-separacao">

@@ -1,5 +1,5 @@
-header{
-    color: #00722B;
+header {
+    color: var(--cinzatexto);
     text-align: center;
     font-size: 18px;
     width: 100%;
@@ -8,101 +8,144 @@ header{
     padding: 10px;
     /*background-image: url(../Ícones/headphones.png);*/
     background-repeat: no-repeat
+    clear: both; 
+    flex: 100%; 
+    max-width: 100%;
 }
-.logosuperior{
+
+.nav-menu{
+    color: var(--verdetexto);
+    text-align: center;
+    font-size: 18px;
+    width: 100%;
+    background-color: #f2f0ee;
+    margin-top: 0;
+    padding: 10px;
+    /*background-image: url(../Ícones/headphones.png);*/
+    background-repeat: no-repeat   
+}
+
+.logosuperior {
     margin-top: -15px;
     max-width: 100px;
     max-height: 100px;
     width: auto;
     height: auto;
 }
-.headphone{/*Ícone de fone no header*/
+
+.headphone {
+    /*Ícone de fone no header*/
     position: absolute;
     left: 430px;
     top: 35px;
     display: inline;
 }
-.logosuperior{/*Ícone da RD no header*/
+
+.logosuperior {
+    /*Ícone da RD no header*/
     position: absolute;
     left: 15px;
     top: 20px;
     display: inline;
 }
-.fazerlogin{/*Botão de login*/
+
+.fazerlogin {
+    /*Botão de login*/
     margin-top: 40px;
-    background-color: #006172;
+    background-color: var(--verdetexto);
     margin-left: 100px;
 }
-.fazercadastro{/*Botão de cadastro*/
+
+.fazercadastro {
+    /*Botão de cadastro*/
     margin-left: 115px;
     margin-top: 25px;
 }
-.formLogin{/*Formulário de login*/
+
+.formLogin {
+    /*Formulário de login*/
     margin-top: 40px;
     margin-left: 90px;
 }
-.logoIdentificacao{/*Ícone de usuário na tela de identificação*/
+
+.logoIdentificacao {
+    /*Ícone de usuário na tela de identificação*/
     display: inline;
     position: absolute;
     left: 90px;
     margin-top: 5px;
 }
-.text-identificacao{/*Texto de cadastro para não clientes*/
+
+.text-identificacao {
+    /*Texto de cadastro para não clientes*/
     margin-left: 150px;
     margin-top: 50px;
-    color: var(--cinzatexto)
+    color: var(--cinzatexto);
 }
-.text-soucliente{/*Texto de identificação do usuário*/
+
+.text-soucliente {
+    /*Texto de identificação do usuário*/
     margin-left: 125px;
     margin-top: 30px;
     color: var(--verdetexto);
 }
-.text-naocliente{
+
+.text-naocliente {
     color: var(--laranjatexto);
     margin-top: 28px;
     margin-left: 50px;
 }
-.text-cadastro{
+
+.text-cadastro {
     position: absolute;
     margin-top: 65px;
     margin-left: 79px;
     font-weight: bolder;
     font-size: 15px;
 }
-.img-cadastro{
+
+.img-cadastro {
     margin-left: 35px;
     margin-top: 20px;
-   display: inline-block;
-   position: relative;
-   z-index: -1;
+    display: inline-block;
+    position: relative;
+    z-index: -1;
 }
-.esq-senha{
-color: var(--laranjatexto);
+.esq-senha {
+    color: var(--laranjatexto);
 }
 
 /*Classes footer abaixo*/
-.footer{
-    background-color: var(--corheader-footer);
+
+.footerCad {
+    text-align: center;
+    background: var(--corheader-footer);
+    width: 100%;
     padding: 40px;
-    margin-top: 38px;
+    margin-top: 35px;
 }
-.dim{
+
+.img-footer {
+    margin-left: 150px;
+}
+
+.dim {
     font-size: 15px;
     margin-left: 12px;
 }
-.dim1{
+
+.dim1 {
     font-size: 15px;
     margin-left: 12px;
     margin-left: 300px;
     display: inline;
 }
 
-
 /*Variáveis de cor*/
-:root{
+
+:root {
     --laranjatexto: #f1a658;
     --cinzatexto: #8d8178;
-    --verdetexto: #006172;
-    --corheader-footer:  #f2f0ee;
+    --verdetexto: #016f33;
+    --corheader-footer: #f2f0ee;
 }
-
