@@ -110,3 +110,8 @@ a {
 .carrossel-produtos .carrossel-mais-vendidos .carrossel-ofertas-especiais{
     margin: 0 0 50px 0;
 }
+
+.lslide {
+    display: flex;
+    justify-content: center;
+}
